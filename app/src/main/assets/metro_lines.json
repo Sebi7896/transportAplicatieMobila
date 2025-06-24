@@ -1,0 +1,39 @@
+{
+    "lines": [
+      {
+        "name": "M1",
+        "color": "#FFD700",
+        "description": "Linia galbenă care leagă partea de vest (Preciziei) de est (Dristor 2).",
+        "funFact": "Este prima linie de metrou din România.",
+        "stations": ["Preciziei", "Gorjului", "Lujerului", "Politehnica", "Eroilor", "Izvor", "Piața Unirii 1", "Timpuri Noi", "Dristor 1", "Dristor 2"]
+      },
+      {
+        "name": "M2",
+        "color": "#1E90FF",
+        "description": "Linia albastră de la Pipera la Berceni, trecând prin centrul capitalei.",
+        "funFact": "Este cea mai aglomerată linie din București.",
+        "stations": ["Pipera", "Aurel Vlaicu", "Aviatorilor", "Piața Victoriei 1", "Piața Romană", "Universitate", "Piața Unirii 2", "Tineretului", "Eroii Revoluției", "Berceni"]
+      },
+      {
+        "name": "M3",
+        "color": "#FF0000",
+        "description": "Linia roșie care leagă Preciziei de Anghel Saligny.",
+        "funFact": "Are multe intersecții cu M1.",
+        "stations": ["Preciziei", "Păcii", "Gorjului", "Lujerului", "Politehnica", "Eroilor 2", "Piața Unirii 2", "Nicolae Grigorescu", "Titan", "Anghel Saligny"]
+      },
+      {
+        "name": "M4",
+        "color": "#32CD32",
+        "description": "Scurtă linie verde care leagă Gara de Nord de Străulești.",
+        "funFact": "Are o parcare tip park & ride la Străulești.",
+        "stations": ["Gara de Nord 2", "Basarab 2", "Grivița", "1 Mai", "Jiului", "Parc Bazilescu", "Laminorului", "Străulești"]
+      },
+      {
+        "name": "M5",
+        "color": "#FFA500",
+        "description": "Linia nouă ce deservește Drumul Taberei.",
+        "funFact": "Are cele mai moderne stații din rețea.",
+        "stations": ["Eroilor 2", "Academia Militară", "Orizont", "Favorit", "Drumul Taberei 34", "Parc Drumul Taberei", "Romancierilor", "Valea Ialomiței", "Râul Doamnei"]
+      }
+    ]
+  }

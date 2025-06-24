@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ✅ Base Application Theme -->
+    <style name="Theme.LicentaFrontendTransport.Light" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your overall theme here -->
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- System bar colors -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <!-- Optional font or background -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <!-- Extended color roles -->
+        <item name="colorOnBackground">@color/colorOnPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+
+    </style>
+
+
+
+
+</resources>

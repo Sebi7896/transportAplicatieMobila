@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Carousel: ViewPager2 într-un CardView cu colțuri rotunjite -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager_payment_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                 />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Segmented toggle control for payment type -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_payment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/membership"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:strokeColor="@color/red_color"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_card"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/card"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:strokeColor="@color/red_color"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Buton de plată cu colțuri rotunjite și padding vertical -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pay"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/red_color"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:paddingVertical="12dp"/>
+    </LinearLayout>
+    <!-- Partial Bottom Sheet -->
+    <LinearLayout
+        android:id="@+id/bottom_sheet_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_top_corners"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_peekHeight="100dp"
+        android:layout_marginHorizontal="10dp"
+        app:behavior_hideable="false"
+        app:behavior_skipCollapsed="false"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Handle bar -->
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CCC"
+            android:radius="2dp" />
+
+        <!-- Conținutul principal -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/image_viewPager_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- 3) Secțiunea News -->
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/news"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="3dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/urbispass_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

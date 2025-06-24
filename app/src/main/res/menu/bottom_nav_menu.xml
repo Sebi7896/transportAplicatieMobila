@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_bottom_nav_bar"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_real_time"
+        android:title="@string/map_letter"
+        android:icon="@drawable/map_icon"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_lines"
+        android:title="@string/lines"
+        android:icon="@drawable/lines_bottom_nav_bar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/wallet"
+        android:title="@string/wallet"
+        android:icon="@drawable/wallet_bottom_nav_bar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_service_status"
+        android:title="@string/service_status"
+        android:icon="@drawable/service_status_bottom_nav_bar"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="duration_array">
+        <item>30 -> 80 lei</item>
+        <item>60 -> 160 lei</item>
+        <item>365 -> 960 lei</item>
+    </string-array>
+</resources>

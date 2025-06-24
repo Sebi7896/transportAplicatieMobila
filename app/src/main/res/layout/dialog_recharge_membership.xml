@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Titlu pentru durata -->
+    <TextView
+        android:id="@+id/tv_duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select duration:"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Spinner pentru durata -->
+    <Spinner
+        android:id="@+id/spinner_duration"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Titlu pentru card -->
+    <TextView
+        android:id="@+id/tv_card_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select payment card:"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Spinner pentru carduri -->
+    <Spinner
+        android:id="@+id/spinner_card"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:spinnerMode="dropdown" />
+
+</LinearLayout>

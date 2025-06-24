@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572378563854",
+    "project_id": "urbispassapp-43a7f",
+    "storage_bucket": "urbispassapp-43a7f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572378563854:android:b77dca83818d13a495435f",
+        "android_client_info": {
+          "package_name": "com.sebastian.licentafrontendtransport"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYZo1sL19ZR2zCSos8vS_c6ST7eLL2aEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

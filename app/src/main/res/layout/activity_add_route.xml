@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ───────── HEADER ───────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Close (X) -->
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/close"
+                app:tint="@android:color/black" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Journey Planner"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Filter -->
+            <ImageButton
+                android:id="@+id/btn_filter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/filter_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/todo"
+                android:visibility="invisible"
+                android:scaleType="fitCenter"
+                android:padding="7dp"
+                app:tint="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Origin -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- Origin -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Current location"
+                    android:inputType="none"
+
+                    android:longClickable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_destination"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/til_origin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_destination"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Choose a destination"
+                android:inputType="none"
+                android:longClickable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Swap button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/swap_locations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/switch_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/til_origin"
+            app:layout_constraintBottom_toBottomOf="@+id/til_destination"
+            android:layout_marginEnd="10dp"
+            android:elevation="3dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:tint="#F44336"
+            android:backgroundTint="@color/white"
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Leave now -->
+
+        <!-- My Places section -->
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:layout_marginTop="24dp"
+          app:cardCornerRadius="8dp"
+          app:cardElevation="4dp"
+          app:cardBackgroundColor="@android:color/white"
+          app:strokeColor="@color/red_color"
+          app:strokeWidth="1dp">
+
+          <TextView
+              android:id="@+id/tv_routes"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="16dp"
+              android:text="Routes"
+              android:textAllCaps="true"
+              android:gravity="center"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              android:background="@color/white"
+              android:textColor="@android:color/black" />
+      </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        <!-- Home -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/routesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="always"
+            android:padding="10dp"
+            android:scrollbars="vertical"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_the_destination"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/red_color"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

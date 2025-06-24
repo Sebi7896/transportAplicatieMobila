@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_color">#B00020</color>
+    <color name="grey_white">#E0E0E0</color>
+    <color name="white_sand">#FFF5E1</color>
+    <color name="ivory_white">#FFFFF0</color>
+    <color name="yellow_light">#FBE7A5</color>
+    <color name="credit_card_color">#e6e6e8</color>
+    <color name="deep_color">#B8860B</color>
+
+
+    <!--pentru stil aplicatie-->
+    <!-- Red – White – Black theme -->
+    <color name="colorPrimary">#D32F2F</color>           <!-- Material Red 700 -->
+    <color name="colorPrimaryVariant">#C62828</color>    <!-- Material Red 800 -->
+    <color name="colorSecondary">#000000</color>         <!-- Black -->
+    <color name="colorOnPrimary">#FFFFFF</color>         <!-- White on red -->
+    <color name="colorOnSecondary">#FFFFFF</color>       <!-- White on black -->
+
+    <color name="colorBackground">#FFFFFF</color>        <!-- White background -->
+    <color name="colorSurface">#FFFFFF</color>           <!-- White surfaces -->
+    <color name="colorOnBackground">#000000</color>      <!-- Black text on white -->
+    <color name="colorOnSurface">#000000</color>         <!-- Black text on white -->
+
+    <color name="colorError">#B00020</color>             <!-- Standard error red -->
+    <color name="colorOnError">#FFFFFF</color>           <!-- White on error red -->
+
+
+    <!--  for legs -->
+    <string-array name="leg_color_hex">
+        <!-- Verde-bluish -->
+        <item>#4CAF50</item>
+        <!-- Albastru închis -->
+        <item>#2196F3</item>
+        <!-- Portocaliu vibrant -->
+        <item>#FF9800</item>
+        <!-- Mov mediu -->
+        <item>#9C27B0</item>
+        <!-- Roșu profund -->
+        <item>#F44336</item>
+        <!-- Turcoaz -->
+        <item>#009688</item>
+        <!-- Galben luminos -->
+        <item>#FFEB3B</item>
+        <!-- Gri-albăstrui (neutral) -->
+        <item>#90A4AE</item>
+        <!-- Light Blue -->
+        <item>#03A9F4</item>
+        <!-- Deep Purple -->
+        <item>#673AB7</item>
+        <!-- Light Green -->
+        <item>#8BC34A</item>
+        <!-- Amber -->
+        <item>#FFC107</item>
+        <!-- Deep Orange -->
+        <item>#FF5722</item>
+        <!-- Pink -->
+        <item>#E91E63</item>
+        <!-- Cyan -->
+        <item>#00BCD4</item>
+        <!-- Lime -->
+        <item>#CDDC39</item>
+        <!-- Brown -->
+        <item>#795548</item>
+        <!-- Blue Grey -->
+        <item>#607D8B</item>
+        <item>#FFCDD2</item> <!-- Red lighten -->
+        <item>#C8E6C9</item> <!-- Green lighten -->
+        <item>#BBDEFB</item> <!-- Blue lighten -->
+        <item>#D1C4E9</item> <!-- Purple lighten -->
+        <item>#FFE0B2</item> <!-- Orange lighten -->
+        <!-- Additional colors -->
+        <item>#F44336</item> <!-- Red (again) -->
+        <item>#E91E63</item> <!-- Pink (again) -->
+        <item>#9C27B0</item> <!-- Purple (again) -->
+        <item>#673AB7</item> <!-- Deep Purple (again) -->
+        <item>#3F51B5</item> <!-- Indigo -->
+        <item>#2196F3</item> <!-- Blue (again) -->
+        <item>#03A9F4</item> <!-- Light Blue (again) -->
+        <item>#00BCD4</item> <!-- Cyan (again) -->
+        <item>#009688</item> <!-- Teal (again) -->
+        <item>#4CAF50</item> <!-- Green (again) -->
+        <item>#8BC34A</item> <!-- Light Green (again) -->
+        <item>#CDDC39</item> <!-- Lime (again) -->
+        <item>#FFEB3B</item> <!-- Yellow (again) -->
+        <item>#FFC107</item> <!-- Amber (again) -->
+        <item>#FF9800</item> <!-- Orange (again) -->
+        <item>#FF5722</item> <!-- Deep Orange (again) -->
+        <item>#795548</item> <!-- Brown (again) -->
+        <item>#607D8B</item> <!-- Blue Grey (again) -->
+        <item>#9E9E9E</item> <!-- Grey -->
+        <item>#607D8B</item> <!-- Blue Grey (duplicate for fallback) -->
+    </string-array></resources>

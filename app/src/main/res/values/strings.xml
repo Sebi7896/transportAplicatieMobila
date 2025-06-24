@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">LicentaFrontendTransport</string>
+    <!--Login Strings-->
+    <string name="close">Close</string>
+    <string name="welcome_text">Welcome to UrbisPass!</string>
+    <string name="register_or_log_in">Register or log in</string>
+    <string name="text_urbispass_first_card">Register or log in and get access to your metro cards, travel history, and alerts for your favorite routes. Participate in UrbisPass promotions and stay updated.</string>
+    <string name="todo">TODO</string>
+    <string name="urbispass_card">UrbisPass Card</string>
+    <string name="manage_your_bucharest_transport_cards_check_validity_and_recharge_directly_from_your_phone">Manage your Bucharest transport cards, check validity.</string>
+    <string name="add_or_link_cards">Add or link cards</string>
+    <string name="see_card_list">See card list</string>
+    <string name="updates_login">Updates</string>
+    <string name="purchases_login">Purchases</string>
+    <string name="alerts">Alerts</string>
+    <string name="login_path">https://urbispass.go.ro/auth/login</string>
+    <string name="base_link">https://urbispass.go.ro/</string>
+    <string name="welcome_back">Welcome back, %1$s!</string>
+    <string name="this_is_your_personal_area_and_where_you_can_edit_your_preferences">This is your personal area and where you can edit your preferences</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="confirm_logout_message">Are you sure you want to logout?</string>
+    <string name="confirm_logout_title">Confirmation logout</string>
+    <string name="home">Home</string>
+    <string name="real_time">Real time</string>
+    <string name="lines">Lines</string>
+    <string name="service_status">Service status</string>
+    <string name="wallet">Wallet</string>
+    <string name="cards">CARDS</string>
+    <string name="phone">PHONE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_now">Start Now</string>
+    <string name="add_a_card">Add a card</string>
+
+    <!--Card Form -->
+    <string name="credit_card_number_hint">Enter your card number</string>
+    <string name="credit_card_name">Enter your card name</string>
+    <string name="CVC">CVC</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="add_credit_card">Add</string>
+    <string name="card_number">XXXX-XXXX-XXXX-XXXX</string>
+
+    <string name="name_pattern">Name :</string>
+    <string name="exp_date">Exp: XX/XXXX</string>
+    <string name="stripe_publish_key">pk_test_51RVyrgQpBLM1u6MT6m0eeDqPYUW4WZlW8zRYv0lIj114n79alnkbvhSDnKpNsuIQ0gArr7kUJA4ag7GGAA5NkKis00tEq5MfRb</string>
+    <string name="enter_16_digits">Enter 16 digits</string>
+    <string name="loading_credit_card">Loading...</string>
+    <string name="add_your_credit_debit_card">Add your credit/debit card</string>
+    <string name="add_card_not_logged_in">You are not logged in. Would you like to sign in to add a card?</string>
+    <string name="link_card_not_logged_in">You are not logged in. Would you like to sign in to view your cards?</string>
+    <string name="purchases_not_logged_in">"You are not logged in. Would you like to sign in to view your purchases? "</string>
+    <string name="alerts_not_logged_in">"You are not logged in. Would you like to sign in to view your alerts? "</string>
+    <string name="promo_image">Promo Image</string>
+    <string name="slider_image">Slider image</string>
+    <string name="news">News</string>
+    <string name="main_not_logged_in_message">Explore everything at your fingertips: sign in to uncover your subscriptions and cards.</string>
+    <string name="pay">Pay</string>
+    <string name="membership">Membership</string>
+    <string name="card">Card</string>
+    <string name="admin_mode">Admin Mode</string>
+    <string name="url_metrou">https://harta-metrou.com</string>
+    <string name="nfc_este_dezactivat">NFC este dezactivat. Activează-l din setări.</string>
+    <string name="nfc_nu_este_suportat">NFC nu este suportat pe acest dispozitiv.</string>
+    <string name="nfc_este_activ">NFC este activ.</string>
+    <string name="apdu_service_description">Your service user-friendly description</string>
+    <string name="aid_group_description">Your AID group user-friendly description</string>
+    <string name="STATUS_SUCCESS">9000</string>
+    <string name="STATUS_FAILED">6F00</string>
+    <string name="SELECT_AID">00A4040007A0000002471001</string>
+    <string name="READ_NDEF_MESSAGE">00B000000F</string>
+    <string name="charge_subway">500</string>
+    <string name="map">MAP</string>
+    <string name="map_not_perm_message">Please grant location permission to use this map</string>
+    <string name="google_maps_id">AIzaSyBYRRFoIjyx7-0VkFqLczLiShbzcQj5CjY</string>
+    <string name="save_the_destination">Save the destination</string>
+    <string name="memberships">Memberships</string>
+    <string name="credit_debit_cards">Credit/Debit Cards</string>
+    <string name="bank_cards">Bank cards</string>
+    <string name="passes">Passes</string>
+    <string name="welcome_approach_the_card">Welcome, approach the card!</string>
+    <string name="map_letter">Map</string>
+    <string name="nfc_not_supported">The card doesn\'t support ISO-DEP protocol</string>
+    <string name="refused_nfc_permission">Refused NFC permission!</string>
+</resources>

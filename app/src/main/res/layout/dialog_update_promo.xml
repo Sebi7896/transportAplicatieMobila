@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancel_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/ivory_white"
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <ImageView
+        android:id="@+id/promo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/update_explore_bucharest_metro_promo"
+        android:contentDescription="@string/promo_image" />
+
+    <Button
+        android:id="@+id/open_site_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FF5722"
+        android:text="Watch"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp" />
+</FrameLayout>

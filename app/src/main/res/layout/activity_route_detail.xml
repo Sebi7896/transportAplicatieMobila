@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Google Map fragment occupying top 45% of screen -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fab_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/white"
+        app:iconTint="@android:color/black"
+        app:iconGravity="textTop"
+        android:paddingTop="10dp"
+        app:icon="@drawable/stripe_ic_paymentsheet_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:elevation="8dp"
+        android:translationZ="8dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fab_my_location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cornerRadius="20dp"
+        android:paddingTop="10dp"
+        android:contentDescription="@string/todo"
+        app:icon="@drawable/current_location"
+        app:iconGravity="textTop"
+        android:backgroundTint="@color/white"
+        app:iconTint="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/map_fragment"
+        app:layout_constraintBottom_toBottomOf="@id/map_fragment"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="8dp"
+        android:translationZ="8dp"/>
+
+    <!-- Container for route info and steps, below the map -->
+    <LinearLayout
+        android:id="@+id/route_info_container"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/card_background"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="0dp"
+        android:elevation="8dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layout_constraintTop_toBottomOf="@id/map_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <!-- Summary: duration and distance -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_route_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:backgroundTint="@color/white"
+            app:strokeColor="@color/grey_white"
+
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_route_summary_icon"
+                    android:layout_width="33dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_directions_walk"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_route_details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/red_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Expandable header (e.g., "See directions for the route") -->
+        <!-- RecyclerView for route steps; takes remaining space -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_steps"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
